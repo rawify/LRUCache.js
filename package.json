@@ -1,0 +1,59 @@
+{
+    "name": "lrucache",
+    "title": "LRUCache.js",
+    "version": "0.0.1",
+    "homepage": "https://github.com/rawify/LRUCache.js",
+    "bugs": "https://github.com/rawify/LRUCache.js/issues",
+    "description": "The RAW Least Recently Used (LRU) cache with optional TTL support",
+    "keywords": [
+        "lru",
+        "lru-cache",
+        "cache",
+        "ttl",
+        "map",
+        "least-recently-used",
+        "memory-cache",
+        "expiration"
+    ],
+    "private": false,
+    "main": "./dist/lrucache.js",
+    "module": "./dist/lrucache.mjs",
+    "types": "./lrucache.d.ts",
+    "browser": "./dist/lrucache.min.js",
+    "unpkg": "./dist/lrucache.min.js",
+    "readmeFilename": "README.md",
+    "exports": {
+        ".": {
+            "types": "./lrucache.d.ts",
+            "require": "./dist/lrucache.js",
+            "import": "./dist/lrucache.mjs"
+        }
+    },
+    "repository": {
+        "type": "git",
+        "url": "git@github.com:rawify/LRUCache.js.git"
+    },
+    "funding": {
+        "type": "github",
+        "url": "https://github.com/sponsors/rawify"
+    },
+    "author": {
+        "name": "Robert Eisele",
+        "email": "robert@raw.org",
+        "url": "https://raw.org/"
+    },
+    "license": "MIT",
+    "engines": {
+        "node": "*"
+    },
+    "directories": {
+        "test": "tests"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "build": "crude-build LRUCache"
+    },
+    "devDependencies": {
+        "crude-build": "^0.1.0"
+    }
+}

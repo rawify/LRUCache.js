@@ -7,8 +7,11 @@ function LRUCache(limit) {
 
 LRUCache.prototype = {
 
+    'limit': 0,
+    'cache': null,
+
     '_isExpired': function (entry) {
-        return entry.expiresAt !== null && Date.now() > entry.expiresAt;
+        return entry['expiresAt'] !== null && Date.now() > entry['expiresAt'];
     },
 
     'get': function (key) {

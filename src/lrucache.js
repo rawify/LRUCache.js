@@ -1,5 +1,5 @@
 /**
- * @license LRUCache.js v0.0.1 8/13/2025
+ * @license LRUCache.js v0.0.2 8/13/2025
  * https://github.com/rawify/LRUCache.js
  *
  * Copyright (c) 2025, Robert Eisele (https://raw.org/)
@@ -13,8 +13,11 @@ function LRUCache(limit) {
 
 LRUCache.prototype = {
 
+    'limit': 0,
+    'cache': null,
+
     '_isExpired': function (entry) {
-        return entry.expiresAt !== null && Date.now() > entry.expiresAt;
+        return entry['expiresAt'] !== null && Date.now() > entry['expiresAt'];
     },
 
     'get': function (key) {

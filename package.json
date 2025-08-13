@@ -1,7 +1,7 @@
 {
     "name": "@rawify/lrucache",
     "title": "LRUCache.js",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "homepage": "https://github.com/rawify/LRUCache.js",
     "bugs": "https://github.com/rawify/LRUCache.js/issues",
     "description": "The RAW Least Recently Used (LRU) cache with optional TTL support",

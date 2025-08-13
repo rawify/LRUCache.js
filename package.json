@@ -1,5 +1,5 @@
 {
-    "name": "lrucache",
+    "name": "@rawify/lrucache",
     "title": "LRUCache.js",
     "version": "0.0.1",
     "homepage": "https://github.com/rawify/LRUCache.js",
